@@ -16,12 +16,12 @@
 
 @media only screen and (max-width: 768px) {
   .table-header {
-    table-layout: auto;
+    font-size: 14px;
   }
 }
 
 .table-body-scroll {
-  max-height: 500px;
+  max-height: 70vh;
   overflow-y: auto;
   scroll-behavior: smooth;
   transition: transform 0.3s ease;
@@ -30,8 +30,14 @@
 .table-body {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
   font-size: 12px;
+  table-layout: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-body {
+    table-layout: auto;
+  }
 }
 
 th,
