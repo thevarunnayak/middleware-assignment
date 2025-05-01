@@ -50,8 +50,8 @@ Then open http://localhost:5173 in your browser.
 - **Visible Columns Toggle**:  
   Columns like **Timestamp**, **Severity**, and **Body** are shown/hidden based on a `visibleColumns` object passed via props.
 
-- **No Image or Icon for Empty State**:  
-  A clean text-only `NoData` component is displayed when no logs are available.
+- **No Data Component for Empty State**:  
+  A clean `NoData` component is displayed when no logs are available.
 
 - **Simple UI and CSS**:  
   Basic styling with CSS — no external UI frameworks used.
