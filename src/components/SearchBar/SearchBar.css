@@ -1,0 +1,11 @@
+.search-bar {
+  padding: 12px;
+  height: 32px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.no-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #6c757d;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.no-data-message {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 500;
+}

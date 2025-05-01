@@ -1,0 +1,38 @@
+.landing-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+  gap: 30px;
+  padding: 16px;
+  width: 100%;
+  padding-left: 210px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-container {
+    padding-left: 0;
+    padding: 16px;
+  }
+}
+
+.table-section {
+  width: 100%;
+}
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin: 8px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+  }
+}
+
+.filter-button-section {
+  display: flex;
+  gap: 16px;
+}
