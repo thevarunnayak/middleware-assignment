@@ -47,7 +47,7 @@ const Sidebar = ({ onFilterChange }: SidebarProps) => {
     return (
         <>
             <div className='sidebar-desktop'>
-                <h3>Filter by Severity</h3>
+                <h5>Filter by Severity</h5>
                 <div className='checkbox-group'>
                     {severities.map((severity) => (
                         <label key={severity}>
