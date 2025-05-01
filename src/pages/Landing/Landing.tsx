@@ -98,6 +98,7 @@ const Landing = () => {
                     page={page}
                     setPage={setPage}
                     visibleColumns={visibleColumns}
+                    columns={allColumns}
                 />
             </div>
         </div>

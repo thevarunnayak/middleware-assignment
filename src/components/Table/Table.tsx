@@ -8,9 +8,10 @@ interface TableProps {
     page: number;
     setPage: React.Dispatch<React.SetStateAction<number>>;
     visibleColumns: Record<string, boolean>;
+    columns: string[];
 }
 
-const Table = ({ logs, totalLogs, page, setPage, visibleColumns }: TableProps) => {
+const Table = ({ logs, totalLogs, page, setPage, visibleColumns, columns }: TableProps) => {
     const tableRef = useRef<HTMLDivElement | null>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [isDataLoading, setIsDataLoading] = useState(true);
@@ -65,9 +66,9 @@ const Table = ({ logs, totalLogs, page, setPage, visibleColumns }: TableProps) =
                     <table className="table-header">
                         <thead>
                             <tr>
-                                {renderColumnHeader("Timestamp", "Timestamp")}
-                                {renderColumnHeader("Severity", "Severity")}
-                                {renderColumnHeader("Body", "Body")}
+                                {columns.map((column) =>
+                                    renderColumnHeader(column as keyof typeof visibleColumns, column)
+                                )}
                             </tr>
                         </thead>
                     </table>
