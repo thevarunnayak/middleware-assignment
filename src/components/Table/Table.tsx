@@ -18,9 +18,7 @@ const Table = ({ logs, totalLogs, page, setPage, visibleColumns }: TableProps) =
     const handleScroll = (e: React.UIEvent<HTMLElement>) => {
         const target = e.currentTarget;
         const atBottom = target.scrollTop + target.clientHeight >= target.scrollHeight - 5;
-        console.log(atBottom);
         if (atBottom && (page + 1) * 100 < totalLogs) {
-            console.log("called")
             setIsLoading(true);
             setPage((prevPage) => prevPage + 1);
         }
